@@ -1,0 +1,14 @@
+prefix=/home/zsh/project/tpc_c_cplusplus/lycium/usr/FFmpeg/armeabi-v7a
+exec_prefix=${prefix}
+libdir=/home/zsh/project/tpc_c_cplusplus/lycium/usr/FFmpeg/armeabi-v7a/lib
+includedir=/home/zsh/project/tpc_c_cplusplus/lycium/usr/FFmpeg/armeabi-v7a/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 58.2.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -pthread -lm
+Cflags: -I${includedir}

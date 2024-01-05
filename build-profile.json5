@@ -5,9 +5,9 @@
         "name": "default",
         "material": {
           "certpath": "C:\\Users\\Administrator\\.ohos\\config\\openharmony\\auto_ohos_default_harmonyos-shell_com.advanced.temp.cer",
-          "storePassword": "0000001BF61F562B076416FFCD781DAAB596E41FAC7DB14641F45162092743CD731378F99DC490CE50AB57",
+          "storePassword": "0000001A5A7481E4459F7428F08449E194941BFD2F7489A74E5F329A6BEC766831E8B8F389ED00267D55",
           "keyAlias": "debugKey",
-          "keyPassword": "0000001B27B51ADE7A480D0AF847F49419757E56A61BC49832AC06D5F2ED44AB93E3EAA6348BD9374A01F6",
+          "keyPassword": "0000001A92BD3F64D3C6C500879CD89B30C86BD83AE27B0AF19F19B7B9C0121467FE0FC3D9948F06227A",
           "profile": "C:\\Users\\Administrator\\.ohos\\config\\openharmony\\auto_ohos_default_harmonyos-shell_com.advanced.temp.p7b",
           "signAlg": "SHA256withECDSA",
           "storeFile": "C:\\Users\\Administrator\\.ohos\\config\\openharmony\\auto_ohos_default_harmonyos-shell_com.advanced.temp.p12"
