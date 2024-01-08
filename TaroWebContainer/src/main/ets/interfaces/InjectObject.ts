@@ -183,6 +183,10 @@ export interface CapsuleController {
   getCapsuleState: () => boolean;
 }
 
+export interface startPushRetOptions {
+  message: string
+}
+
 export interface InnerInjectObj {
   setNavigationBarColor: (options: NavigationBarOptions) => void;
   showNavigationBarLoading: () => void;
@@ -199,6 +203,7 @@ export interface InnerInjectObj {
   setCapsuleState: (visible: boolean) => void;
   getCapsuleState: () => CapsuleState;
   chooseMediaAssets: (options: ChooseMediaOptions) => void;
+  startRtmp: (url:string) =>startPushRetOptions ;
 }
 
 export interface InjectObject {

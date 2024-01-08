@@ -19,6 +19,7 @@ import { BusinessError } from '@ohos.base';
 import Want from '@ohos.app.ability.Want';
 import bundleManager from '@ohos.bundle.bundleManager';
 import fs from '@ohos.file.fs';
+import testNapi from "libtarowebcontainer.so";
 
 import {
   CapsuleController,
@@ -397,6 +398,18 @@ export class NativeInject {
       chooseMediaAssets: (options: ChooseMediaOptions) => {
           selectMediaAssets(options, this.chooseAlbumCallback!)
       },
+      startRtmp:(url)=>{
+        try{
+          console.log('tarotest url is',url)
+          let data: ArrayBuffer = new ArrayBuffer(1024);
+          let num = testNapi.pushRtmp(data,url)
+          console.log('tarotest num is ',num)
+        }catch(err){
+          console.error("tarotest err is",err)
+          return {message:'push is fileure'}
+        }
+        return {message:'push is success'}
+      }
     };
   }
 }
